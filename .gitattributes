@@ -1,2 +1,117 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="Website Icon" href="titleicon.png" type="png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartPhone</title>
+</head>
+<body>
+    
+  <div class="cont">
+    <div class="photo">
+      <img src="xfront.png" class="iphonex">
+      <img src="xback.png" class="iphonex">
+      <img src="13miniblue.png" class="mini13">
+      <img src="13minired.png" class="mini13">
+      <img src="honorblack.png" class="honor">
+      <img src="honorblue.png" class="honor">
+      <img src="s22front.png" class="samsung">
+      <img src="s22back.png" class="samsung">
+    </div>
+    <footer>
+      <span style="--i:#1bbe43;"><ion-icon name="logo-whatsapp"></ion-icon></span>
+      <span style="--i:#f6038a;"><ion-icon name="logo-instagram"></ion-icon></span>
+      <span style="--i:#1f7bf2;"><ion-icon name="logo-facebook"></ion-icon></span>
+
+
+    </footer>
+    <div class="one" style="--clr:lightblue;">
+    <h1>Apple iPhone X</h1>
+    <p>iPhone X, 2017-ci ildə istehsal olunmuşdur. Yaddaşı 256 GB.  Mağazamızda sadəcə gümüşü rəngi var. Həm nağd, həm də kreditlə əldə edə bilərsiniz. Əlavə məlumat üçün bizə whatsapp, instaqram və facebookdan yaza bilərsiniz</p>
+    <span>$1000,00</span>
+    <button class="btn1 Xphone" style="--color:#e2e2e0;">back</button>
+    <button class="btn2 Xphone">front</button>
+    </div>
+
+    <div class="one" style="--clr:lightseagreen;">
+      <h1>Apple iPhone 13 mini</h1>
+      <p>Apple firması tərəfindən 2020-ci ildə istehsal olunmuşdur. Yaddaşı 256 GB. Mağazamızda qırmızı və mavi rəngi mövcuddur. Həm nağd, həm də kreditlə əldə edə bilərsiniz. Əlavə məlumat üçün bizə whatsapp, instaqram və facebookdan yaza bilərsiniz</p>
+      <span>$1500,00</span>
+      <button class="btn1 phone13" style="--color:#97010f;">red</button>
+      <button class="btn2 phone13" style="--color:#205d7a;">blue</button>
+      </div>
+
+      <div class="one" style="--clr:pink;">
+        <h1>Samsung Galaxy S22</h1>
+        <p>Samsung firması tərəfindən 2022-ci ilde istehsal olunmuşdur. Yaddaşı 512 GB.  Mağazamızda sadəcə ağ rəngi mövcuddur. Həm nağd, həm də kreditlə əldə edə bilərsiniz. Əlavə məlumat üçün bizə whatsapp, instaqram və facebookdan yaza bilərsiniz</p>
+        <span>$2000,00</span>
+        <button class="btn1 s22" style="--color:white;">back</button>
+        <button class="btn2 s22">front</button>
+        </div>
+
+        <div class="one" style="--clr:lightgreen;">
+          <h1>Honor X8a</h1>
+          <p>Honor ailəsinə məxsus bu smartfon 2023 modelidir. Yaddaşı 128 Gb olan bu telefonun mağazamızda mavi və qara rəngi mövcuddur. Həm nağd, həm də kreditlə əldə edə bilərsiniz. Əlavə məlumat üçün bizə whatsapp, instaqram və facebookdan yaza bilərsiniz</p>
+          <span>$400,00</span>
+          <button class="btn1 x8a" style="--color:#6095a7;">blue</button>
+          <button class="btn2 x8a" style="--color:#26272b;">black</button>
+          </div>
+
+  </div>
+
+  <script>
+    const photo=document.querySelector('.photo')
+
+    window.addEventListener('scroll',function(){
+      const scrollTop=window.scrollY || document.documentElement.scrollTop;
+
+      let rotation=0;
+
+      if(scrollTop>=0 && scrollTop<50){
+
+      }
+      else if(scrollTop>=50 && scrollTop<400){
+        rotation=45
+      }
+      else if(scrollTop>=400 && scrollTop<800){
+        rotation=90
+      }
+      else if(scrollTop>=800 && scrollTop<1200){
+        rotation=135
+      }
+      else if(scrollTop>=1200 && scrollTop<1600){
+        rotation=180
+      }
+      else if(scrollTop>=1600 && scrollTop<1900){
+        rotation=225
+      }
+      else if(scrollTop>=1900){
+        rotation=270
+      }
+
+      photo.style.transform=`rotate(${-rotation}deg)`
+    })
+
+  </script>
+
+
+
+
+
+
+
+
+
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+
+
+</body>
+
+</html>
