@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.cont{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    width: 100%;
+    height: 2650px;
+    scroll-margin: 5px;
+}
+.one{
+    position: relative;
+    width: 100%;
+    height: 650px;
+    background-color: var(--clr);
+}
+.one h1{
+    position: relative;
+    top: 200px;
+    left: 70px;
+}
+.one p{
+    position: absolute;
+    word-spacing: 5px;
+    display: block;
+    width: 55%;
+    left: 55px;
+    top: 250px;
+}
+.one span{
+    position: absolute;
+    left: 140px;
+    top: 350px;
+    font-weight: 900;
+    font-size: 1.1em;
+}
+.one .btn1{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    left: 80px;
+    top: 450px;
+    letter-spacing: 1px;
+    font-size: 17px;
+    border: 1px solid black;
+    outline: none;
+    overflow: hidden;
+}
+.one .btn1::before{
+    content: '';
+    position: absolute;
+    transition: 0.5s;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color);
+    left: -100px;
+}
+.one .btn1::after{
+    content: '';
+    position: absolute;
+    transition: 0.5s;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color);
+    right: -100px;
+}
+.one .btn1:hover:before{
+    left: -40px;
+}
+.one .btn1:hover::after{
+    right: -40px;
+}
+.one .btn2{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    left: 200px;
+    top: 450px;
+    letter-spacing: 1px;
+    font-size: 17px;
+    border: 1px solid black;
+    outline: none;
+    overflow: hidden;
+}
+.one .btn2::before{
+    content: '';
+    position: absolute;
+    transition: 0.5s;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color);
+    left: -100px;
+}
+.one .btn2::after{
+    content: '';
+    position: absolute;
+    transition: 0.5s;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color);
+    right: -100px;
+}
+.one .btn2:hover:before{
+    left: -40px;
+}
+.one .btn2:hover::after{
+    right: -40px;
+}
+.photo{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s transform;
+    z-index: 1;
+    width: 650px;
+    height: 650px;
+    background-color: lightslategray;
+    border-radius: 50%;
+    right: -300px;
+}
+.photo .iphonex{
+    position: absolute;
+    left: -100px;
+    transition: 1s;
+}
+.photo .mini13{
+    position: absolute;
+    top: -220px;
+    display: none;
+    transition: 1s;
+}
+.photo .honor{
+    position: absolute;
+    display: none;
+    bottom: -220px;
+    transition: 1s;
+}
+.photo .samsung{
+    position: absolute;
+    display: none;
+    right: -200px;
+    transition: 1s;
+}
+footer{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+}
+footer span{
+    position: relative;
+    cursor: pointer;
+    color: var(--i);
+    font-size: 1.5em;
+    margin-left: 50px;
+    right: 150px;
+}
